@@ -1,5 +1,5 @@
 import React from "react";
-import {Header} from "./"
+import {Header, Home} from "./"
 
 const App = () => {
   return (
@@ -8,6 +8,7 @@ const App = () => {
       {/*header */}
       <Header />
       {/*home container */}
+      <Home/ >
       {/*about container */}
       {/*skills container */}
       {/*project container */}
