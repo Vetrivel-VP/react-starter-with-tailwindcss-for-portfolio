@@ -1,7 +1,8 @@
 import React from "react";
 import {motion, AnimatePresence} from "framer-motion";
 import {Hero} from "../assets"
-import { HeroTypeWritter } from "../components";
+import { HeroTypeWritter, HomeSocialLinks } from "../components";
+import { Socials } from "../utils/helper";
 
 const Home = () => {
   return(
@@ -22,6 +23,16 @@ const Home = () => {
             <h2 className="text-2xl lg:text-4xl text-texlight mt-4">
               And I'am <HeroTypeWritter speed={100} words={["a Web Developer..", " a Freelanzer"]} />
             </h2>
+          <p className="text-base text-texlight mt-6 text-center lg:text-left  ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eos provident possimus! Ut, aspernatur obcaecati!</p>
+        {/* sosial media links   */}
+
+        <div className="flex items-center justify-center gap-16 mt-16 ">
+        <AnimatePresence>
+            {Socials && Socials.map((item,index) =>(
+              <HomeSocialLinks key={index} data={item} index={index} />
+            )) }
+          </AnimatePresence>
+        </div>
         </div>
         {/* hero section */}
         <div className="w-full h-full flex items-start justify-center lg:items-center">
@@ -34,7 +45,7 @@ const Home = () => {
             ease : "linear",
           }}
           src={Hero} 
-          className="w-auto h-auto object-contain"/>
+          className="max-w-[500px] h-auto object-contain"/>
         </div>
       </div>
     </section>
