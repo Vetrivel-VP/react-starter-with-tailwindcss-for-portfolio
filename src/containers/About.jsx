@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section 
     id="about" 
-    className="flex items-center justify-center flex-col gap-12 my-12"
+    className="flex items-center justify-center flex-col gap-8 my-12"
     >
     {/* title */}
     <div className="w-full flex items-center justify-center py-24">
