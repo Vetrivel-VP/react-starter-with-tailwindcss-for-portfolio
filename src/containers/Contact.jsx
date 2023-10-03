@@ -1,6 +1,8 @@
 import React,{useState} from "react";
 import {motion, AnimatePresence} from 'framer-motion'
 import { Leaf1, Leaf2 } from "../assets";
+import { addDoc, collection } from 'firebase/firestore'
+import { db } from '../config/firebase.config'
 
 const Contact = () => {
 const [data, setData] = useState({
@@ -15,11 +17,15 @@ const handleTextChange = (e)=>{
       // update the state for the corresponding input values 
       setData((prevData) =>({ ...prevData, [name]: value }));
 }
-const sendmesagge = async ()=>{
+const sendMesagge = async () => {
   if(data.email === "" || data.email === null){
     //throw and alert
   }else{
-    
+    await addDoc(collection(db, "mesagges"), {...data}).then(()=>{
+      //throw that alert mesagge
+    }).catch(err=>{
+      //throw that alert 
+    })
   }
 } 
 
@@ -45,13 +51,13 @@ const sendmesagge = async ()=>{
     <div className=" w-full flex flex-col items-center justify-start gap-4">
       <div className="w-full lg:w-[600px] p-2 flex flex-col items-center justify-start gap-4  ">
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-4 ">
-          <input 
+        <input 
           type="text" 
-          name="firsName" 
+          name="firstName" 
           placeholder="First Name " 
           value={data.firstName}
           onChange={handleTextChange}
-          required className="w-full px-4 py-3 rounded-md border border-[rgba(255,255,255,0.3)] bg-transparent focus:border-primary outline-none text-white " />
+          className="w-full px-4 py-3 rounded-md border border-[rgba(255,255,255,0.3)] bg-transparent focus:border-primary outline-none text-white " />
           <input 
           type="text" 
           name="lastName" 
@@ -67,7 +73,7 @@ const sendmesagge = async ()=>{
         placeholder="E-mail " 
         value={data.email}
         onChange={handleTextChange}
-        required className="w-full px-4 py-3 rounded-md border border-[rgba(255,255,255,0.3)] bg-transparent focus:border-primary outline-none text-white " />
+        className="w-full px-4 py-3 rounded-md border border-[rgba(255,255,255,0.3)] bg-transparent focus:border-primary outline-none text-white " />
         <textarea 
         name="mesagge" id="" cols="30" rows="10" 
         placeholder="Mesagge here..."
