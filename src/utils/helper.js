@@ -25,25 +25,25 @@ export const Socials = [
   {
     id: `facebook-${Date.now()}`,
     Icon: FaFacebookF,
-    uril: "",
+    uril: "https://www.facebook.com/heyatin.bashlangici/",
     color: "#1877F2",
   },
   {
     id: `linkedin-${Date.now()}`,
     Icon: FaLinkedinIn,
-    uril: "",
+    uril: "https://www.linkedin.com/in/agabala-karimli-317838a9/",
     color: "#0072b1",
   },
   {
     id: `github-${Date.now()}`,
     Icon: FaGithub,
-    uril: "",
+    uril: "https://github.com/karimliaghabala",
     color: "#fff",
   },
   {
     id: `youtube-${Date.now()}`,
     Icon: FaYoutube,
-    uril: "",
+    uril: "https://www.youtube.com/channel/UCkLcBRvZ52fFCTFexv5VUnA",
     color: "#ff0000",
   },
 ];

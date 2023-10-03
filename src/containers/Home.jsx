@@ -23,7 +23,7 @@ const Home = () => {
             <h2 className="text-2xl lg:text-4xl text-texlight mt-4">
               And I'am <HeroTypeWritter speed={100} words={["a Web Developer..", " a Freelanzer"]} />
             </h2>
-          <p className="text-base text-texlight mt-6 text-center lg:text-left  ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eos provident possimus! Ut, aspernatur obcaecati!</p>
+          <p className="text-base text-texlight mt-6 text-center lg:text-left  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, esse assumenda magni iste officiis est magnam inventore veritatis debitis veniam enim cumque quae necessitatibus amet nesciunt iusto, quas provident? Ratione.</p>
         {/* sosial media links   */}
 
         <div className="flex items-center justify-center gap-16 mt-16 ">
@@ -33,6 +33,13 @@ const Home = () => {
             )) }
           </AnimatePresence>
         </div>
+        {/* hire me */}
+          <a 
+          href="#" 
+          style={{boxShadow : "inset 0px 0px 10px rgba(255,255,255,0.4)"}}
+          className="mt-12 border border-[rgba(255,255,255,0.3)] rounded-xl px-8 py-3 active:95 group hover:border-primary">
+            <p className="text-texlight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-secondary">Hire me</p>
+          </a>
         </div>
         {/* hero section */}
         <div className="w-full h-full flex items-start justify-center lg:items-center">
