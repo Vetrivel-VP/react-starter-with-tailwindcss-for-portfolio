@@ -3,6 +3,7 @@ import {motion, AnimatePresence} from 'framer-motion'
 import { Leaf1, Leaf2 } from "../assets";
 import { addDoc, collection } from 'firebase/firestore'
 import { db } from '../config/firebase.config'
+import { Alert } from "./";
 
 const Contact = () => {
 const [data, setData] = useState({
@@ -12,6 +13,12 @@ const [data, setData] = useState({
   mesagge: "",
 });
 
+const [alert, setAlert] = useState({
+  isAlert : false,
+  mesagge : "",
+  status : null,
+})
+
 const handleTextChange = (e)=>{
       const {name,value} = e.target
       // update the state for the corresponding input values 
@@ -20,11 +27,51 @@ const handleTextChange = (e)=>{
 const sendMesagge = async () => {
   if(data.email === "" || data.email === null){
     //throw and alert
+    setAlert({
+      isAlert : true, 
+      mesagge : "Required fields cannot be empyt", 
+      status : "warning"
+    });
+
+    setInterval(() => {
+      setAlert({
+        isAlert : false, 
+        mesagge : "", 
+        status : null
+      });
+    }, 4000);
   }else{
     await addDoc(collection(db, "mesagges"), {...data}).then(()=>{
       //throw that alert mesagge
+      setData({firstName : "", lastName : "", email : "", mesagge : ""})
+      setAlert({
+      isAlert : true, 
+      mesagge : "Thanks for contacting me", 
+      status : "succes"
+    });
+
+    setInterval(() => {
+      setAlert({
+        isAlert : false, 
+        mesagge : "", 
+        status : null
+      });
+    }, 4000);
     }).catch(err=>{
       //throw that alert 
+      setAlert({
+        isAlert : true, 
+        mesagge : `Error : ${err.mesagge}`, 
+        status : "danger"
+      });
+  
+      setInterval(() => {
+        setAlert({
+          isAlert : false, 
+          mesagge : "", 
+          status : null
+        });
+      }, 4000);
     })
   }
 } 
@@ -34,6 +81,12 @@ const sendMesagge = async () => {
     id="contact" 
     className="flex items-center justify-center flex-col gap-8 my-12"
     >
+    {/* Toast Alert notification */}
+    <AnimatePresence>
+    {alert.isAlert && (
+      <Alert  status={alert.status} mesagge={alert.mesagge}/>
+    )}
+    </AnimatePresence>
     {/* title */}
     <div className="w-full flex items-center justify-center py-24">
       <motion.div 

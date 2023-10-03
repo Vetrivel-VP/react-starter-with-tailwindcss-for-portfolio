@@ -91,6 +91,7 @@ const ParticlesContainer = () => {
         detectRetina: true,
       }}
     />
+    
   );
 };
 
