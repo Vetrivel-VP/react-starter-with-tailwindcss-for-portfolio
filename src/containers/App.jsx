@@ -43,8 +43,8 @@ const App = () => {
           <div className=" w-full flex flex-col items-center justify-center gap-3">
               <p className="text-texlight text-center">agabala.93@gmail.com</p>
               <p className="text-texlight text-center">+994-50-413-15-97</p>
-              <a href="#">
-                <p className="text-primary text-center">Hire me</p>
+              <a href="https://wa.me/message/2HVPAGLOC4HJP1">
+                <p className="text-primary text-center">Contact Me</p>
               </a>
           </div>
         </div>

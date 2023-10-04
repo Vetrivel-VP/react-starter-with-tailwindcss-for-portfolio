@@ -19,7 +19,7 @@ const Projects = () => {
       transition={{delay: 0.3}}
       className="flex items-center justify-around w-52">
         <img src={Leaf1} className="w-6 h-auto object-contain" alt="Leaf" />
-        <p className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary capitalize">Projects</p>
+        <p className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary capitalize">Project</p>
         <img src={Leaf2} className="w-6 h-auto object-contain" alt="Leaf" />
       </motion.div>
     </div>

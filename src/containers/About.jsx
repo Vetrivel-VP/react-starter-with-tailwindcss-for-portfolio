@@ -37,13 +37,10 @@ const About = () => {
       {/* content section */}
       <div className="w-full px-8 flex flex-col gap-4 items-start justify-start">
       <p className="text-texlight text-base tracking-wide text-justify  ">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio nobis soluta molestias fuga, hic quod id et eos voluptas est quis sapiente harum nemo vitae doloribus numquam rem repellat doloremque ea! Sint dolores nostrum inventore neque, enim molestiae sed obcaecati soluta, quos fugit ad? Temporibus doloribus rem eligendi quaerat.
+      03.03.1993 – cü ildə Zərdab rayonu Pərvanlı kəndində anadan olmuşam . 2011 – ci ildə 439 bal toplayaraq ADPU – nun Coğrafiya müəllimliyi ixtisasına qəbul olmuşam(ödənişsiz) . 2015 – ci ildə Akademik məzuniyyət götürərək Hərbi Xidmətə getmişəm.2017 – ci ildə universiteti bitirib MİQ imtahanında 44 bal toplayaraq hazırda işlədiyim İmişli rayonu S.Məmmədov adına Axıcanlı kənd tam orta məktəbinə qəbul olmuşam. Hazırda əmək müqaviləmə əsasən həmin müəssisənin işçisiyəm.
       </p>
       <p className="text-texlight text-base tracking-wide text-justify  ">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio nobis soluta molestias fuga, hic quod id et eos voluptas est quis sapiente harum nemo vitae doloribus numquam rem repellat doloremque ea! Sint dolores nostrum inventore neque, enim molestiae sed obcaecati soluta, quos fugit ad? Temporibus doloribus rem eligendi quaerat.
-      </p>
-      <p className="text-texlight text-base tracking-wide text-justify  ">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio nobis soluta molestias fuga, hic quod id et eos voluptas est quis sapiente harum nemo vitae doloribus numquam rem repellat doloremque ea! Sint dolores nostrum inventore neque, enim molestiae sed obcaecati soluta, quos fugit ad? Temporibus doloribus rem eligendi quaerat.
+      Əlavə olaraqda həmin rayonun A.Allahverdiyev adına Qaralar kənd tam orta məktəbdədə 3 il müddətli müqavilə ilə çalışmışam . Həmçinin hər iki məktəbin UTİS, ŞAGİRD-MƏZUN, e-gov və s. sistemlər üzrə kordinatoruyam.Artıq iş sahəmi İT - ə doğru dəyişmişəm.2011 – ci ildə TB Bilgi tədris mərkəzində 6 aylıq Office proqramları, Adobe Photoshop proqramları üzrə kurs keçmişəm . Sertfikat verilib Təhsil sahəsində bir çox online kurslarda olmuşam. STEAM, UTİS və.s 
       </p>
       </div>
     </div>

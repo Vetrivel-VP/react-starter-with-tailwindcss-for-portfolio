@@ -30,20 +30,15 @@ const Skills = () => {
       {/* content section */}
       <div className="w-full px-8 flex flex-col gap-4 items-start justify-start">
       <p className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary capitalize">
-          My skills & Work Experience 
+          Bacarıqlarım və təcrübəm
           </p>
       <p className="text-texlight text-base tracking-wide text-justify  ">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio nobis soluta molestias fuga, hic quod id et eos voluptas est quis sapiente harum nemo vitae doloribus numquam rem repellat doloremque ea! Sint dolores nostrum inventore neque, enim molestiae sed obcaecati soluta, quos fugit ad? Temporibus doloribus rem eligendi quaerat.
+      3 kursda iştirak etmişəm .1 – i əyani 2 – si isə online.1. Təhsil Nazirliyinin təşkil etdiyi «SQL proqramçı» kursunu bitirib sertfikat imtahani vermişəm(92/100 bal).2. Gənclər və idman Nazirliyinin təşkil etdiyi «WEB proqramlaşdırma» (HTML, CSS, JAVA SCRİPT) üzrə online təlimlərdə iştirak etdim . Sertfikat imtahanı verdim.
       </p>
       <p className="text-texlight text-base tracking-wide text-justify  ">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio nobis soluta molestias fuga, hic quod id et eos voluptas est quis sapiente harum nemo vitae doloribus numquam rem repellat doloremque ea! Sint dolores nostrum inventore neque, enim molestiae sed obcaecati soluta, quos fugit ad? Temporibus doloribus rem eligendi quaerat.
+      3. Təhsil Nazirliy, İqtisadiyyat Nazirliyi və İT-Academy təşkil etdiyi Web developer kursunuda bitirmişəm.
+      Hazırda Dövlət Məşğulluq agentliyinin təşkil etdiyi kursda 2 gün təhsilalıram, 3 gün təcrübə keçirik. Tədris və təcrübə Jed Academy - də keçirilir
       </p>
-      <p className="text-texlight text-base tracking-wide text-justify  ">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio nobis soluta molestias fuga, hic quod id et eos voluptas est quis sapiente harum nemo vitae doloribus numquam rem repellat doloremque ea! Sint dolores nostrum inventore neque, enim molestiae sed obcaecati soluta, quos fugit ad? Temporibus doloribus rem eligendi quaerat.
-      </p>
-      <p className="text-texlight text-base tracking-wide text-justify  ">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio nobis soluta molestias fuga, hic quod id et eos voluptas est quis sapiente harum nemo vitae doloribus numquam rem repellat doloremque ea! Sint dolores nostrum inventore neque, enim molestiae sed obcaecati soluta, quos fugit ad? Temporibus doloribus rem eligendi quaerat.
-      </p> 
       </div>
             {/* image section */}
       <div className="w-full flex flex-col gap-4 items-center justify-center px-8">
@@ -52,7 +47,7 @@ const Skills = () => {
         <SkillCard skill={"Java Script"} percentage={"75%"} color={"#FFB900"} />
         <SkillCard skill={"React JS"} percentage={"65%"} color={"#00FFF3"} move={true} />
         <SkillCard skill={"Node JS"} percentage={"60%"} color={"#FFE400"} />
-        <SkillCard skill={"MS-SQL,My-SQL,MongoDB"} percentage={"80%"} color={"#FF3FFF"} move={true} />
+        <SkillCard skill={"MS-SQL,My-SQL,MongoDB,FireBase"} percentage={"80%"} color={"#FF3FFF"} move={true} />
       </div>
     </div>
     </section>

@@ -19,6 +19,7 @@ import {
   PortfolioFirebase,
   RestaurantClone,
   SocialMedia,
+
 } from "../assets";
 
 export const Socials = [
@@ -82,58 +83,42 @@ export const Menus = [
 ];
 
 export const ProjectsData = [
+  
+  {
+    id: `openai-${Date.now()}`,
+    name: "Fit Club",
+    imgSrc: OpenAI,
+    gitURL: "https://github.com/Vetrivel-VP",
+  },
   {
     id: `food-${Date.now()}`,
-    name: "Single Food Restaurant",
+    name: "BakuDev studio",
     imgSrc: RestaurantClone,
     gitURL: "https://github.com/Vetrivel-VP",
   },
   {
     id: `codepen-${Date.now()}`,
-    name: "CodePen Clone",
+    name: "Təhsil Portalı",
     imgSrc: CodePenClone,
     gitURL: "https://github.com/Vetrivel-VP",
   },
-  {
-    id: `openai-${Date.now()}`,
-    name: "OpenAI",
-    imgSrc: OpenAI,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `chatapp-${Date.now()}`,
-    name: "Chat App Build",
-    imgSrc: ChatApp,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `imageSharing-${Date.now()}`,
-    name: "Image Sharing App",
-    imgSrc: ImageSharing,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `pixabayclone-${Date.now()}`,
-    name: "Pixabay Clone 2.0",
-    imgSrc: PixabayClone,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `freshjuiceui-${Date.now()}`,
-    name: "Fresh Juice UI Build",
-    imgSrc: FreshJuiceUI,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `socialmedia-${Date.now()}`,
-    name: "Social Media App",
-    imgSrc: SocialMedia,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
+  
   {
     id: `portfoliofirebase-${Date.now()}`,
     name: "Portfolio UI Fireabse",
     imgSrc: PortfolioFirebase,
+    gitURL: "https://github.com/karimliaghabala/tailwindcss-for-portfolio",
+  },
+  {
+    id: `chatapp-${Date.now()}`,
+    name: "Travel",
+    imgSrc: ChatApp,
+    gitURL: "https://github.com/Vetrivel-VP",
+  },
+  {
+    id: `freshjuiceui-${Date.now()}`,
+    name: "MegaTexnika",
+    imgSrc: FreshJuiceUI,
     gitURL: "https://github.com/Vetrivel-VP",
   },
 ];
