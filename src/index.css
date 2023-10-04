@@ -5,7 +5,8 @@
 @import url(https://fonts.googleapis.com/css?family=Croissant+One:regular);
 
 body {
-  width: 100vw;
+  max-width: 1250px;
+  margin: 0 auto;
   min-height: 100vh;
   height: 100vh;
   background: #020010;

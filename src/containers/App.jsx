@@ -6,7 +6,7 @@ import {motion, AnimatePresence} from 'framer-motion'
 
 const App = () => {
   return (
-    <div className="w-full xl:max-w-[1600px] py-12 px-4 lg:px-12 pr-4 lg:pr-32 ">
+    <div className="w-full xl:max-w-[1280px] py-12 px-4 lg:px-12 pr-4 lg:pr-32 container ">
       {/*particles container */}
       <ParticlesContainer />
       {/*header */}
