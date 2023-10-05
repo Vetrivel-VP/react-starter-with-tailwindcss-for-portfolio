@@ -9,10 +9,10 @@ import {useTranslation } from 'react-i18next'
 const Home = () => {
   const { t } = useTranslation();
   return(
-    <section id="home" className="flex items-center justify-center flex-col gap-12 relative">
+    <section id="home" className="flex items-center justify-center flex-col gap-12 relative pl-2">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full">
         {/* language container */}
-        <div className=" w-full flex items-center justify-center fixed pr-24 top-0 pt-3 z-50">
+        <div className=" w-full flex items-center justify-center fixed  top-0 pt-3 z-50">
           <Language />
         </div>
         {/* content section */}
@@ -48,7 +48,7 @@ const Home = () => {
           </a>
         </div>
         {/* hero section */}
-        <div className="w-full h-full flex items-start justify-center lg:items-center">
+        <div className="w-full h-full flex items-start justify-center lg:items-center ">
           <motion.img 
           initial={{ y : 0 }}
           animate={{ y : [-10,10,-10] }}

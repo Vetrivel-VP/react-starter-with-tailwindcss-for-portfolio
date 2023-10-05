@@ -23,7 +23,11 @@ const translationAz = {
     mesagge:"Mesajınız burada...",
     send: "Göndər",
     warningMesagge:"Tələb olunan sahələr boş ola bilməz",
-    grMesagge:"Mənimlə əlaqə saxladığınız üçün təşəkkür edirəm"
+    grMesagge:"Mənimlə əlaqə saxladığınız üçün təşəkkür edirəm",
+    hapS:"Xoşbəxt tələbələr",
+    hapC:"Xoşbəxt müştərilər",
+    fsProject:"Tam layihələr",
+    pProject:"Ümumi layihələr",
 
 }
 const translationEn = {
@@ -48,7 +52,11 @@ const translationEn = {
     mesagge:"Mesagge here...",
     send: "Send",
     warningMesagge:"Required fields cannot be empyt",
-    grMesagge:"Thanks for contacting me"
+    grMesagge:"Thanks for contacting me",
+    hapS:"Happy Students",
+    hapC:"Happy Customers",
+    fsProject:"Full-Stack Projects",
+    pProject:"Public Projects",
 
 
 }
@@ -74,7 +82,11 @@ const translationRu = {
     mesagge:"Ваше сообщение здесь...",
     send: "Отправлять",
     warningMesagge:"Обязательные поля не могут быть пустыми",
-    grMesagge:"Спасибо, что связались со мной"
+    grMesagge:"Спасибо, что связались со мной",
+    hapS:"Счастливые студенты",
+    hapC:"Счастливые клиенты",
+    fsProject:"Полнофункциональные проекты",
+    pProject:"Общественные проекты",
 
 }
 i18n

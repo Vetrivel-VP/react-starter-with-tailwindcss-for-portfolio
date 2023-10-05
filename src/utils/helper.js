@@ -52,7 +52,6 @@ export const Socials = [
   },
 ];
 
-const {t} = useTranslation()
 export const Menus = [
   {
     id: `home-${Date.now()}`,
