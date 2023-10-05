@@ -2,8 +2,11 @@ import React from "react";
 import {motion, AnimatePresence} from 'framer-motion'
 import { Leaf1, Leaf2} from "../assets";
 import { SkillCard } from "../components";
+import {useTranslation } from 'react-i18next'
+
 
 const Skills = () => {
+  const {t} = useTranslation()
   return (
     <section 
     id="skills" 
@@ -19,7 +22,7 @@ const Skills = () => {
       className="flex items-center justify-around w-52">
         <img src={Leaf1} className="w-6 h-auto object-contain" alt="Leaf" />
         <p className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary capitalize">
-          Skills
+          {t('skills')}
           </p>
         <img src={Leaf2} className="w-6 h-auto object-contain" alt="Leaf" />
       </motion.div>
@@ -30,14 +33,13 @@ const Skills = () => {
       {/* content section */}
       <div className="w-full px-8 flex flex-col gap-4 items-start justify-start">
       <p className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary capitalize">
-          Bacarıqlarım və təcrübəm
+          {t('bt')}
           </p>
       <p className="text-texlight text-base tracking-wide text-justify  ">
-      3 kursda iştirak etmişəm .1 – i əyani 2 – si isə online.1. Təhsil Nazirliyinin təşkil etdiyi «SQL proqramçı» kursunu bitirib sertfikat imtahani vermişəm(92/100 bal).2. Gənclər və idman Nazirliyinin təşkil etdiyi «WEB proqramlaşdırma» (HTML, CSS, JAVA SCRİPT) üzrə online təlimlərdə iştirak etdim . Sertfikat imtahanı verdim.
+      {t('infoSkills1')}
       </p>
       <p className="text-texlight text-base tracking-wide text-justify  ">
-      3. Təhsil Nazirliy, İqtisadiyyat Nazirliyi və İT-Academy təşkil etdiyi Web developer kursunuda bitirmişəm.
-      Hazırda Dövlət Məşğulluq agentliyinin təşkil etdiyi kursda 2 gün təhsilalıram, 3 gün təcrübə keçirik. Tədris və təcrübə Jed Academy - də keçirilir
+      {t('infoSkills2')}
       </p>
       </div>
             {/* image section */}

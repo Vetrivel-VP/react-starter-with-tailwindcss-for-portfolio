@@ -38,11 +38,9 @@ const About = () => {
       </div>
       {/* content section */}
       <div className="w-full px-8 flex flex-col gap-4 items-start justify-start">
-      <p className="text-texlight text-base tracking-wide text-justify  ">
-      03.03.1993 – cü ildə Zərdab rayonu Pərvanlı kəndində anadan olmuşam . 2011 – ci ildə 439 bal toplayaraq ADPU – nun Coğrafiya müəllimliyi ixtisasına qəbul olmuşam(ödənişsiz) . 2015 – ci ildə Akademik məzuniyyət götürərək Hərbi Xidmətə getmişəm.2017 – ci ildə universiteti bitirib MİQ imtahanında 44 bal toplayaraq hazırda işlədiyim İmişli rayonu S.Məmmədov adına Axıcanlı kənd tam orta məktəbinə qəbul olmuşam. Hazırda əmək müqaviləmə əsasən həmin müəssisənin işçisiyəm.
+      <p className="text-texlight text-base tracking-wide text-justify  ">{t('infoAbout1')}
       </p>
-      <p className="text-texlight text-base tracking-wide text-justify  ">
-      Əlavə olaraqda həmin rayonun A.Allahverdiyev adına Qaralar kənd tam orta məktəbdədə 3 il müddətli müqavilə ilə çalışmışam . Həmçinin hər iki məktəbin UTİS, ŞAGİRD-MƏZUN, e-gov və s. sistemlər üzrə kordinatoruyam.Artıq iş sahəmi İT - ə doğru dəyişmişəm.2011 – ci ildə TB Bilgi tədris mərkəzində 6 aylıq Office proqramları, Adobe Photoshop proqramları üzrə kurs keçmişəm . Sertfikat verilib Təhsil sahəsində bir çox online kurslarda olmuşam. STEAM, UTİS və.s 
+      <p className="text-texlight text-base tracking-wide text-justify  ">{t('infoAbout2')}
       </p>
       </div>
     </div>

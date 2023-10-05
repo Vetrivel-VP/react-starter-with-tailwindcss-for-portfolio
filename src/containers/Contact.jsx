@@ -4,8 +4,10 @@ import { Leaf1, Leaf2 } from "../assets";
 import { addDoc, collection } from 'firebase/firestore'
 import { db } from '../config/firebase.config'
 import { Alert } from "./";
+import {useTranslation } from 'react-i18next'
 
 const Contact = () => {
+const {t} = useTranslation()
 const [data, setData] = useState({
   firstName: "",
   lastName: "",
@@ -29,7 +31,7 @@ const sendMesagge = async () => {
     //throw and alert
     setAlert({
       isAlert : true, 
-      mesagge : "Required fields cannot be empyt", 
+      mesagge : t('warningMesagge'), 
       status : "warning"
     });
 
@@ -46,7 +48,7 @@ const sendMesagge = async () => {
       setData({firstName : "", lastName : "", email : "", mesagge : ""})
       setAlert({
       isAlert : true, 
-      mesagge : "Thanks for contacting me", 
+      mesagge : t('grMesagge'), 
       status : "succes"
     });
 
@@ -96,7 +98,7 @@ const sendMesagge = async () => {
       transition={{delay: 0.3}}
       className="flex items-center justify-around w-52">
         <img src={Leaf1} className="w-6 h-auto object-contain" alt="Leaf" />
-        <p className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary capitalize">Contact me</p>
+        <p className="text-transparent text-center bg-clip-text bg-gradient-to-r from-primary to-secondary capitalize">{t('contact')}</p>
         <img src={Leaf2} className="w-6 h-auto object-contain" alt="Leaf" />
       </motion.div>
     </div>
@@ -107,14 +109,14 @@ const sendMesagge = async () => {
         <input 
           type="text" 
           name="firstName" 
-          placeholder="First Name " 
+          placeholder={t('fName')} 
           value={data.firstName}
           onChange={handleTextChange}
           className="w-full px-4 py-3 rounded-md border border-[rgba(255,255,255,0.3)] bg-transparent focus:border-primary outline-none text-white " />
           <input 
           type="text" 
           name="lastName" 
-          placeholder="Last Name " 
+          placeholder={t('lName')} 
           value={data.lastName}
           onChange={handleTextChange}
           className="w-full px-4 py-3 rounded-md border border-[rgba(255,255,255,0.3)] bg-transparent focus:border-primary outline-none text-white " />
@@ -123,13 +125,13 @@ const sendMesagge = async () => {
         <input 
         type="email" 
         name="email"
-        placeholder="E-mail " 
+        placeholder={t('eMail')}
         value={data.email}
         onChange={handleTextChange}
         className="w-full px-4 py-3 rounded-md border border-[rgba(255,255,255,0.3)] bg-transparent focus:border-primary outline-none text-white " />
         <textarea 
         name="mesagge" id="" cols="30" rows="10" 
-        placeholder="Mesagge here..."
+        placeholder={t('mesagge')}
         value={data.mesagge}
         onChange={handleTextChange}
         className="w-full px-4 py-3 rounded-md border border-[rgba(255,255,255,0.3)] bg-transparent focus:border-primary outline-none text-white "
@@ -138,7 +140,7 @@ const sendMesagge = async () => {
           <button className="px-12 py-3 bg-gradient-to-br from-primary to-secondary rounded-md w-full lg:w-auto hover:bg-gradient-to-br hover:from-black hover:to-black hover:border hover:border-primary hover:text-primary "
           onClick={sendMesagge}
           >
-            Send 
+            {t('send')} 
             </button>
         </div>
       </div>
