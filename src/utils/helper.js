@@ -1,3 +1,6 @@
+
+
+
 import {
   FaDiagramProject,
   FaEnvelope,
@@ -19,31 +22,32 @@ import {
   PortfolioFirebase,
   RestaurantClone,
   SocialMedia,
+
 } from "../assets";
 
 export const Socials = [
   {
     id: `facebook-${Date.now()}`,
     Icon: FaFacebookF,
-    uril: "",
+    uril: "https://www.facebook.com/heyatin.bashlangici/",
     color: "#1877F2",
   },
   {
     id: `linkedin-${Date.now()}`,
     Icon: FaLinkedinIn,
-    uril: "",
+    uril: "https://www.linkedin.com/in/agabala-karimli-317838a9/",
     color: "#0072b1",
   },
   {
     id: `github-${Date.now()}`,
     Icon: FaGithub,
-    uril: "",
+    uril: "https://github.com/karimliaghabala",
     color: "#fff",
   },
   {
     id: `youtube-${Date.now()}`,
     Icon: FaYoutube,
-    uril: "",
+    uril: "https://www.youtube.com/channel/UCkLcBRvZ52fFCTFexv5VUnA",
     color: "#ff0000",
   },
 ];
@@ -82,58 +86,42 @@ export const Menus = [
 ];
 
 export const ProjectsData = [
+  
+  {
+    id: `openai-${Date.now()}`,
+    name: "Fit Club",
+    imgSrc: OpenAI,
+    gitURL: "https://github.com/Vetrivel-VP",
+  },
   {
     id: `food-${Date.now()}`,
-    name: "Single Food Restaurant",
+    name: "BakuDev studio",
     imgSrc: RestaurantClone,
     gitURL: "https://github.com/Vetrivel-VP",
   },
   {
     id: `codepen-${Date.now()}`,
-    name: "CodePen Clone",
+    name: "Təhsil Portalı",
     imgSrc: CodePenClone,
     gitURL: "https://github.com/Vetrivel-VP",
   },
-  {
-    id: `openai-${Date.now()}`,
-    name: "OpenAI",
-    imgSrc: OpenAI,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `chatapp-${Date.now()}`,
-    name: "Chat App Build",
-    imgSrc: ChatApp,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `imageSharing-${Date.now()}`,
-    name: "Image Sharing App",
-    imgSrc: ImageSharing,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `pixabayclone-${Date.now()}`,
-    name: "Pixabay Clone 2.0",
-    imgSrc: PixabayClone,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `freshjuiceui-${Date.now()}`,
-    name: "Fresh Juice UI Build",
-    imgSrc: FreshJuiceUI,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `socialmedia-${Date.now()}`,
-    name: "Social Media App",
-    imgSrc: SocialMedia,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
+  
   {
     id: `portfoliofirebase-${Date.now()}`,
     name: "Portfolio UI Fireabse",
     imgSrc: PortfolioFirebase,
+    gitURL: "https://github.com/karimliaghabala/tailwindcss-for-portfolio",
+  },
+  {
+    id: `chatapp-${Date.now()}`,
+    name: "Travel",
+    imgSrc: ChatApp,
+    gitURL: "https://github.com/Vetrivel-VP",
+  },
+  {
+    id: `freshjuiceui-${Date.now()}`,
+    name: "MegaTexnika",
+    imgSrc: FreshJuiceUI,
     gitURL: "https://github.com/Vetrivel-VP",
   },
 ];
