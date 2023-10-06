@@ -1,8 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url(https://fonts.googleapis.com/css?family=Croissant+One:regular);
+/* 
+@import url(https://fonts.googleapis.com/css?family=Croissant+One:regular); */
+@import url(https://fonts.googleapis.com/css2?family=Tapestry&display=swap);
 
 body {
   max-width: 1250px;
@@ -10,14 +11,14 @@ body {
   min-height: 100vh;
   height: 100vh;
   background: #020010;
-  font-family: "Croissant One", cursive;
+  /* font-family: "Croissant One", cursive; */
+  font-family: 'Tapestry', cursive;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
 }
 
-body,
 html {
   scroll-behavior: smooth;
 }
