@@ -18,7 +18,7 @@ const Home = () => {
         {/* content section */}
         <div className="w-full h-full flex flex-col items-center lg:items-start justify-center gap-4">
 
-            <h2 className="text-3xl lg:text-4xl text-texlight">
+            <h2 className="text-3xl lg:text-4xl text-texlight text-center">
               {t('hello')} 
               <span className="block tracking-wider text-4xl lg:text-6xl mt-4 text-white">
                 {" "}
