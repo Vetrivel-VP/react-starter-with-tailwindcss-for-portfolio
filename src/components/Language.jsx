@@ -145,7 +145,7 @@ const Language = () => {
                 <button onClick={onClick} className=" text-white group hover:text-primary" type="submit" value="az">AZE</button>
                 <button onClick={onClick} className=" text-white group hover:text-primary" type="submit" value="en">ENG</button>
                 <button onClick={onClick} className=" text-white group hover:text-primary" type="submit" value="ru">RUS</button>
-                <button onClick={onClick} className=" text-white group hover:text-primary" type="submit" value="ru">DEU</button>
+                <button onClick={onClick} className=" text-white group hover:text-primary" type="submit" value="de">DEU</button>
             </form>
         </Suspense>
     )
