@@ -81,7 +81,7 @@ const sendMesagge = async () => {
   return (
     <section 
     id="contact" 
-    className="flex items-center justify-center flex-col gap-8 my-12 pl-8"
+    className="flex items-center justify-center flex-col gap-8 my-12 pl-7"
     >
     {/* Toast Alert notification */}
     <AnimatePresence>
