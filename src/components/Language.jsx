@@ -88,7 +88,35 @@ const translationRu = {
     hapC:"Счастливые клиенты",
     fsProject:"Полнофункциональные проекты",
     pProject:"Общественные проекты",
+}
 
+const translationDe = {
+    about: "Über",
+    skills: "Fähigkeiten",
+    project: "Projekte",
+    contact: "Kontaktieren Sie mich",
+    hello: "Hallo, ich bin es",
+    name: "Karimli Aghabala",
+    i: "Und ich bin",
+    dev: "ein Webentwickler...",
+    fre: "auf der Suche nach einem Job...",
+    info1: "Ich wurde am 03.03.1993 im Dorf Parvanli in der Region Zardab geboren. Im Jahr 2011 wurde ich mit 439 Punkten zum Geographie-Lehrfach der Aserbaidschanischen Staatlichen Pädagogischen Universität zugelassen ...",
+    infoAbout1:"Ich wurde am 03.03.1993 im Dorf Parvanli in der Region Zardab geboren. Im Jahr 2011 wurde ich mit 439 Punkten in die Lehrfachrichtung Geographie der Aserbaidschanischen Staatlichen Pädagogischen Universität aufgenommen (kostenlos). Im Jahr 2015 wurde Ich nahm eine akademische Beurlaubung und ging zum Militärdienst. Im Jahr 2017 schloss ich mein Studium an der Universität ab und erreichte 44 Punkte in der MIG-Prüfung. Derzeit bin ich gemäß meinem Arbeitsvertrag Angestellter dieses Unternehmens.",
+    infoAbout2: "Außerdem habe ich an der nach A. Allahverdiyev benannten weiterführenden Schule im Dorf Karalar in derselben Region mit einem 3-Jahres-Vertrag gearbeitet. Außerdem UTIS, STUDENT-GRADUATE, E-Gov usw. beider Schulen. Ich bin ein Systemkoordinator. Ich habe mein Arbeitsfeld bereits in die IT gewechselt. Im Jahr 2011 habe ich einen 6-monatigen Kurs über Office-Programme und Adobe Photoshop-Programme am Bildungszentrum TB Bilgi absolviert. Zertifikat ausgestellt. Ich habe viele Online-Kurse in diesem Bereich besucht der Bildung. STEAM, UTIS usw.",
+    bt: "Meine Fähigkeiten und Erfahrungen",
+    infoSkills1: "Ich habe an 3 Kursen teilgenommen. 1 ist Präsenzkurs und 2 online. 1. Ich habe den vom Bildungsministerium organisierten SQL-Programmiererkurs abgeschlossen und die Zertifizierungsprüfung bestanden (92/100 Punkte). 2. I nahm an Online-Schulungen zum Thema WEB-Programmierung (HTML, CSS, JAVA SCRIPT) teil, die vom Ministerium für Jugend und Sport organisiert wurden. Ich habe die Zertifizierungsprüfung bestanden.",
+    infoSkills2: "3. 3. Ich habe den vom Bildungsministerium, dem Wirtschaftsministerium und der IT-Akademie organisierten Kurs für Webentwickler abgeschlossen. Derzeit studiere ich zwei Tage lang im Kurs der staatlichen Arbeitsagentur und wir absolvieren drei Tage Praxistage. Ausbildung und Praxis finden an der Jed Academy statt",
+    fName:"Vorname",
+    lName:"Nachname",
+    eMail:"E-Post",
+    mesagge:"Meldung hier...",
+    send: "Senden",
+    warningMesagge:"Erforderliche Felder können nicht geleert werden",
+    grMesagge:"Danke, dass Sie mich kontaktiert haben",
+    hapS:"Glückliche Studenten",
+    hapC:"Zufriedene Kunden",
+    fsProject:"Full-Stack-Projekte",
+    pProject:"Öffentliche Projekte"
 }
 i18n
     .use(initReactI18next)
@@ -97,6 +125,7 @@ i18n
             az: { translation: translationAz },
             en: { translation: translationEn },
             ru: { translation: translationRu },
+            de: { translation: translationDe },
         },
         lng: 'az',
         fallbackLng: 'az',
@@ -116,6 +145,7 @@ const Language = () => {
                 <button onClick={onClick} className=" text-white group hover:text-primary" type="submit" value="az">AZE</button>
                 <button onClick={onClick} className=" text-white group hover:text-primary" type="submit" value="en">ENG</button>
                 <button onClick={onClick} className=" text-white group hover:text-primary" type="submit" value="ru">RUS</button>
+                <button onClick={onClick} className=" text-white group hover:text-primary" type="submit" value="ru">DEU</button>
             </form>
         </Suspense>
     )
