@@ -12,7 +12,7 @@ const Home = () => {
     <section id="home" className="flex items-center justify-center flex-col gap-12 relative pl-2 pt-2">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full">
         {/* language container */}
-        <div className=" w-full flex items-center justify-center fixed  top-0 pt-3 z-50 ">
+        <div className=" w-[90%] flex items-center justify-center fixed  top-0 pt-3 z-50 pr-2">
           <Language />
         </div>
         {/* content section */}
