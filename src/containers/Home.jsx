@@ -9,7 +9,7 @@ import {useTranslation } from 'react-i18next'
 const Home = () => {
   const { t } = useTranslation();
   return(
-    <section id="home" className="flex items-center justify-center flex-col gap-12 relative pl-6 pt-2">
+    <section id="home" className="flex items-center justify-center flex-col gap-12 relative pl-8 pt-2">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full">
         {/* language container */}
         <div className=" w-[90%] flex items-center justify-center fixed  top-0 pt-3 z-50 pr-1">

@@ -27,7 +27,7 @@ const App = () => {
       {/*contact container */}
       <Contact />
       {/*footer container */}
-      <div className="w-full flex flex-col items-center justify-start mt-32 mb-12 ">
+      <div className="w-full flex flex-col items-center justify-start mt-32 mb-12 pl-8 ">
         <p className="text-3xl tracking-wide text-texlight ">Karimli Aghabala</p>
         <div className="flex items-center justify-center gap-16 mt-16 pl-2">
         <AnimatePresence>
