@@ -17,7 +17,7 @@ import { useTranslation } from "react-i18next";
 const App = () => {
   const { t } = useTranslation();
   return (
-    <div className="w-full pl-7 xl:max-w-[1280px]  container ">
+    <div className="w-full  xl:max-w-[1280px]  py-12  lg:px-12  lg:pr-32 container ">
       {/*particles container */}
       <ParticlesContainer />
       {/*header */}

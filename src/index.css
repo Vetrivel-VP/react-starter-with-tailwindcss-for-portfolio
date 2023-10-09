@@ -4,7 +4,9 @@
 /* 
 @import url(https://fonts.googleapis.com/css?family=Croissant+One:regular); */
 @import url(https://fonts.googleapis.com/css2?family=Tapestry&display=swap);
-
+* {
+  box-sizing: border-box ;
+}
 body {
   max-width: 1250px;
   margin: 0 auto;
@@ -12,7 +14,7 @@ body {
   height: 100vh;
   background: #020010;
   /* font-family: "Croissant One", cursive; */
-  font-family: 'Tapestry', cursive;
+  font-family: "Tapestry", cursive;
   display: flex;
   flex-direction: column;
   align-items: center;
